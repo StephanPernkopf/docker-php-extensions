@@ -1,6 +1,6 @@
 FROM php:8-fpm-alpine
 
-ARG PHP_EXTENSIONS="pdo_pgsql zip"
+ARG PHP_EXTENSIONS="pdo_pgsql pgsql zip"
 ARG PHP_PECL_EXTENSIONS="xdebug mcrypt"
 ARG PHP_BUILD_DEPS="${PHPIZE_DEPS} postgresql-dev libzip-dev libmcrypt-dev"
 ARG PHP_EXT_DEPS="libmcrypt libpq libzip"
